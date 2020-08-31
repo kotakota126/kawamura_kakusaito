@@ -1,0 +1,560 @@
+body {
+  margin: 0;
+  background: url(../img/背景.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+  /* font-family: 'M PLUS 1p', sans-serif; */
+}
+
+.logo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  font-size: 55px;
+  font-family: 'VeganStylePersonalUse';
+
+}
+.logo h2 {
+  font-size: 28px;
+  font-family: 'YellowPeas-UltraLight.';
+}
+
+.nav {
+  background-color: #c1b08e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.nav-item a:hover {
+  color: #666;
+  border-bottom: 3px solid #333;
+}
+
+
+/* ハンバーガー */
+/*menu*/
+.menu{
+  height: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  z-index: 100;
+  display: none;
+}
+.menu__line{
+  background: #777;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition:transform .3s;
+  width: 100%;
+}
+.menu__line--center{
+  top: 9px;
+}
+.menu__line--bottom{
+  bottom: 0;
+}
+.menu__line--top.active{
+  top: 8px;
+  transform: rotate(45deg);
+}
+.menu__line--center.active{
+  transform:scaleX(0);
+}
+.menu__line--bottom.active{
+  bottom: 10px;
+  transform: rotate(135deg);
+}
+
+.gnav{
+  background-color: rgba(255, 246, 246, 0.911);
+  /* background: rgba(0,0,0,0.8); */
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+  margin-top: -170px;
+}
+.gnav__wrap{
+  align-items:center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+
+}
+
+.gnav ul {
+  list-style: none;
+  padding: 0;
+}
+.gnav__menu__item{
+  margin: 40px 0;
+}
+.gnav__menu__item a{
+  color: #333;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 40px;
+  transition: .5s;
+}
+.gnav__menu__item a:hover{
+  color: #666;
+}
+
+.hero{
+  background:url(images/hero.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+.container {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.container h1 {
+  font-size: 25px;
+  border-top: 1px solid #666;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.about h1 {
+  margin-bottom: 10px;
+}
+
+.about h1 {
+  border: none;
+  padding: 0;
+}
+
+.container h2 {
+  font-size: 18px;
+}
+
+.top img {
+  height: auto;
+  width: 100%;
+  object-position: center;
+}
+
+
+.about-info {
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  margin-bottom: 5px;
+}
+
+.net-btn {
+  background-color: #c1b08e;
+  padding: 10px 20px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  border: none;
+}
+
+.net-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.net-btn:hover {
+  opacity: 0.7;
+}
+
+
+
+.naikann {
+  display: flex;
+}
+
+.view img {
+  width: 100%;
+  height: auto;
+}
+
+.sns {
+  margin-top: 30px;
+}
+
+.sns ul {
+  padding: 0 100px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns ul li .fab {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.inst {
+  color: #ee26bc;
+  /* //非対応のブラウザでの文字色を設定 */
+  background-image: -webkit-linear-gradient(-135deg,#1400c8,#b900b4,#f50000);
+  /* //背景色にグラデーションを指定 */
+  -webkit-background-clip: text;
+  /* //テキストでくり抜く */
+  -webkit-text-fill-color: transparent;
+  /* //くり抜いた部分は背景を表示 */
+  padding-top: 20px;
+}
+
+.twitter {
+  color: #1DA1F2;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.staff h1 {
+  margin-bottom: 10px;
+}
+
+.staff p{
+  padding-bottom: 30px;
+}
+
+.staff .row {
+  /* padding: 0 100px; */
+}
+
+.stailist  img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topiscs .row {
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.osirase {
+  width: 310px;
+  height: 350px;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.osirase a {
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.osirase:hover {
+  opacity: 0.7;
+}
+
+.osirase .osirase-logo:hover,
+.osirase-pic:hover {
+  opacity: 1; 
+}
+
+
+.osirase-logo {
+  border: 2px solid  #c1b08e;
+  margin-left: 10px;
+}
+
+.osirase-pic img {
+  width: 95%;
+  object-fit: cover;
+  height: 230px;
+}
+
+.osirase-logo {
+  width: 95%;
+  height: 230px;
+  background-color: #fff;
+  margin-right: 0;
+}
+
+.osirase-logo h1{
+  font-size: 44px;
+  padding-top: 80px;
+  border-top: none;
+  margin-bottom: 5px;
+  font-family: 'VeganStylePersonalUse';
+
+}
+
+.osirase-logo h2{
+  font-size: 19px;
+  font-family: 'YellowPeas-UltraLight.';
+
+}
+
+
+.osirase-logo h3 {
+  padding-top: 64px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.osirase-logo h4 {
+font-size: 18px;
+}
+
+
+.osirase-info {
+  text-align: start;
+}
+
+.osirase-info span {
+  font-size: 10px;
+  color: #666;
+}
+
+.osirase-info h3 {
+  font-size: 14px;
+}
+
+.osirase-info p {
+  font-size: 11px;
+  color: #c1b08e;
+  margin-bottom: 0;
+}
+
+
+.more-btn {
+  background-color: #c1b08e ;
+  color: #fff;
+  border-radius: 25px;
+  padding: 5px 30px;
+  margin-top: 30px;
+  border: none;
+}
+
+.style .row {
+  margin-top: 30px;
+}
+
+
+.hair-pic {
+  background-color: #fff;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.hair-pic img {
+  width: 270px;
+  height: 320px;
+  padding: 10px 0;
+  object-fit: cover;
+  padding: 15px;
+}
+
+.hair-info p {
+  font-size: 14px;
+}
+
+.hair-info p span {
+  color: #666;
+}
+
+.menu-btn {
+  background-color: #c1b08e;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  border: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: -5px;
+}
+
+footer .container {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last1 {
+  display: flex;
+}
+
+
+.last1 ul {
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 50px;
+  margin-right: 100px;
+}
+
+.last1 ul li {
+  margin-bottom: 10px;
+}
+
+.last1 ul li a  {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+
+}
+
+.last1 ul li a:hover{
+  opacity: 0.7;;
+}
+
+.last2 {
+  justify-content: space-between;
+  color: #fff;
+  /* border-top: 1px solid #666; */
+  padding-bottom: ;
+}
+
+.last2 h1 {
+  border-top: none;
+  padding-top: 0;
+  margin-bottom: 0;
+  font-family: 'VeganStylePersonalUse';
+}
+
+.last2 h2 {
+  font-family: 'YellowPeas-UltraLight.';
+  margin-top: 0px;
+}
+
+.last2 p {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.last-sns {
+  margin-top: 60px;
+  padding-left: 120px;
+}
+
+.last-sns .fab{
+  color: #fff;
+  margin-right: -20px;
+}
+
+@media screen and (max-width:767px) {
+  .menu {
+    display: block;
+  }  
+
+  .pc-nav {
+    display: none;
+  }
+
+.staff .row {
+  flex-wrap: nowrap;
+}
+  .stailist {
+    padding: 0;
+
+  }
+
+  .topiscs .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .osirase {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hair {
+    margin-bottom: 30px;
+  }
+  
+  footer .container,
+  .last1 {
+    display: block;
+  }
+
+  .last1 ul {
+    margin-bottom: 0;
+  }
+
+  .last2 {
+    margin-top: 50px;
+  }
+
+  .last2 p{
+    margin-top: 50px;
+  }
+
+  .last-sns {
+    margin-top: 5px;
+    padding-left: 0;
+  }
+
+  .last-sns a .fab {
+    font-size: 13px;
+  }
+  
+}
+
+@media screen and (min-width:768px) {
+  .last1 ul {
+    justify-content: space-between;
+  }
+
+  .sns {
+    margin-top: 50px;
+  }
+
+  .sns ul {
+    justify-content: center;
+  }
+
+  .sns ul li {
+    margin-right: 20px;
+  }
+
+
+  .last-sns ul {
+    padding: 0;
+  }
+  .last-sns .fab {
+    margin-right: 20px;
+  }
+}
+
+
